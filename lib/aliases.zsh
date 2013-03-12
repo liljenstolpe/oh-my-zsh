@@ -14,13 +14,27 @@ alias please='sudo'
 
 # Show history
 alias history='fc -l 1'
+alias h='fc -l'
 
 # List direcory contents
-alias lsa='ls -lah'
-alias l='ls -lA1'
-alias ll='ls -l'
-alias la='ls -lA'
+alias ls='ls -AF'
+alias l='ls -l'
+alias ll='ls -lAG'
+alias lf='ls -FAG'
+alias la='ls -oG'
 alias sl=ls # often screw this up
 
-alias afind='ack-grep -il'
+# Jobs
+alias j='jobs -l'
+
+# printing and formating
+alias denscript='enscript -A -2 -DDuplex:true'
+alias xlatex='xelatex -output-driver=xdvipdfmx'
+
+# utilites
+alias gdig='dig @8.8.8.8'
+
+# humor
+alias fortune='fortune -ea'
+alias cookie='fortune -e xfiles babylon5 dune hitchhiker firefly'
 
