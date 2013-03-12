@@ -37,6 +37,25 @@ plugins=(git osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/cdl/bin:/usr/local/bin:/opt/local/sbin:/opt/local/bin:/usr/local/git/bin:/usr/texbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
-[[ -s "/Users/cdl/.rvm/scripts/rvm" ]] && source "/Users/cdl/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+#path setting
+export PATH=/$HOME/bin
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/opt/local/bin
+export PATH=$PATH:/usr/local/git/bin
+export PATH=$PATH:/usr/texbin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/opt/local/sbin
+export PATH=$PATH:/usr/bin
+export PATH=$PATH:/bin:
+export PATH=$PATH:/usr/sbin
+export PATH=$PATH:/sbin
+
+#manpath setting
+export MANPATH=/usr/local/share/man
+export MANPATH=$MANPATH:/usr/local/man
+export MANPATH=$MANPATH:/opt/local/man
+export MANPATH=$MANPATH:`/usr/bin/manpath -q`
+
+#rvm scripts if they exist
+[[ -s "/Users/cdl/.rvm/scripts/rvm" ]] && source "/Users/cdl/.rvm/scripts/rvm"
