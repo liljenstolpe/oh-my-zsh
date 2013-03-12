@@ -23,7 +23,7 @@ $(virtualenv_info)$(prompt_char) '
     return_code="%(?..%{$fg[red]%} [%?] %{$reset_color%})"
 
     # Loads rvm info to the right side of the zsh prompt showing: ruby-version@gemset-name
-    # RPROMPT='$(~/.rvm/bin/rvm-prompt)'
+    RPROMPT='$(rvm-prompt)'
 
     # Displays different symbols (simultaneously) depending on the current status of your git repo.
     ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} ✚"

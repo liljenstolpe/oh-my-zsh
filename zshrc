@@ -46,8 +46,9 @@ export PATH=$PATH:/usr/local/git/bin
 export PATH=$PATH:/usr/texbin
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/opt/local/sbin
+export PATH=$PATH:/usr/local/rvm/bin
 export PATH=$PATH:/usr/bin
-export PATH=$PATH:/bin:
+export PATH=$PATH:/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
 
@@ -55,7 +56,8 @@ export PATH=$PATH:/sbin
 export MANPATH=/usr/local/share/man
 export MANPATH=$MANPATH:/usr/local/man
 export MANPATH=$MANPATH:/opt/local/man
+export MANPATH=$MANPATH:/usr/local/rvm/man
 export MANPATH=$MANPATH:`/usr/bin/manpath -q`
 
 #rvm scripts if they exist
-[[ -s "/Users/cdl/.rvm/scripts/rvm" ]] && source "/Users/cdl/.rvm/scripts/rvm"
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
