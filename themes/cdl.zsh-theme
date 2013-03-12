@@ -20,7 +20,7 @@ $(virtualenv_info)$(prompt_char) '
     ZSH_THEME_GIT_PROMPT_CLEAN=""
 
     # Display exitcode on the right when >0
-    return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
+    return_code="%(?..%{$fg[red]%} [%?] %{$reset_color%})"
 
     # Loads rvm info to the right side of the zsh prompt showing: ruby-version@gemset-name
     RPROMPT='$(~/.rvm/bin/rvm-prompt)'
@@ -42,7 +42,7 @@ else
     ZSH_THEME_GIT_PROMPT_CLEAN=""
 
     # Display exitcode on the right when >0
-    return_code="%(?..%? ↵)"
+    return_code=" %(?.. [%?] )"
 
     RPROMPT='${return_code}$(git_prompt_status)'
 
