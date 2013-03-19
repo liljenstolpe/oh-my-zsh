@@ -56,6 +56,8 @@ export MANPATH=/usr/local/share/man
 export MANPATH=$MANPATH:/usr/local/man
 export MANPATH=$MANPATH:/opt/local/man
 export MANPATH=$MANPATH:/usr/local/rvm/man
+export MANPATH=$MANPATH:/Applications/Xcode.app/Contents/Developer/usr/share/man
+
 export MANPATH=$MANPATH:`/usr/bin/manpath -q`
 
 #rvm scripts if they exist
