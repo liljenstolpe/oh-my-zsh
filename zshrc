@@ -40,6 +40,7 @@ source $ZSH/oh-my-zsh.sh
 
 #path setting
 export PATH=/$HOME/bin
+export PATH=$PATH:/usr/local/MacGPG2/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/opt/local/bin
 export PATH=$PATH:/usr/texbin
@@ -57,7 +58,7 @@ export MANPATH=$MANPATH:/usr/local/man
 export MANPATH=$MANPATH:/opt/local/man
 export MANPATH=$MANPATH:/usr/local/rvm/man
 export MANPATH=$MANPATH:/Applications/Xcode.app/Contents/Developer/usr/share/man
-
+export MANPATH=$MANPATH:/usr/share/man
 export MANPATH=$MANPATH:`/usr/bin/manpath -q`
 
 #rvm scripts if they exist
